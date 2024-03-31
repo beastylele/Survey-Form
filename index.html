@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survery Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for taking the time to fill out the survey</p>
+      <form id="survey-form">
+
+        <label for="name" id="name-label">Name<br>
+        <input type="text" id="name" placeholder="Name" required>
+        </label>
+        <br>
+        <label for="email" id="email-label">Email<br>
+        <input id="email" type="email" placeholder="Enter your email" required/>
+        </label>
+        <br>
+        <label for="number" id="number-label" placeholder="Age">Age<br>
+        <input type="number" id="number" min=10 max=99 placeholder="Age"/>
+        </label>
+        <br>
+        <label for="dropdown">What is your favorite pet<br>
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Dog</option>
+          <option value="2">Cat</option>
+          <option value="3">Bird</option>
+        </select>
+        </label>
+        <br>
+        <legend>Would you recommend a pet to everyone?</legend>
+        <label for="yes-pet">
+          <input id="yes-pet" type="radio" name="recommend-pet" value="yes"/>Of course!
+        </label>
+        <br>
+        <label for="maybe">
+          <input id="maybe" type="radio" name="recommend-pet" value="maybe"/>Maybe
+        </label>
+        <br>
+        <label for="no-pet">
+          <input id="no" type="radio" name="recommend-pet" value="no">
+        No
+        </label>
+        <br>
+        <legend for="necessary">Which are necessary for pets?</legend>
+        <label for="food">
+          <input type="checkbox" id="food" name="food" value="Food">Food
+        </label>
+        <br>
+        <label for="water">
+        <input type="checkbox" id="water" name="water" value="Water">Water
+        </label>
+        <br>
+        <label for="fun">
+          <input  type="checkbox" id="fun" name="fun" value="Fun">Fun Time
+        </label>
+        <br>
+        <label for="music">
+          <input type="checkbox" id="music" name="music" value="Music">Music
+        </label>
+        <br>
+        <label for="love">
+          <input  type="checkbox" id="love" name="love" value="love">Love
+        </label>
+        <br>
+
+        <label for="text">What do you love about pets?
+        <br>
+          <textarea id="text" name="text" rows=3 cols=27 placeholder="The thing I love is..."></textarea>
+        </label> 
+        <br>
+        <input id="submit" type="submit" value="Submit"/>
+      </form>
+    </main>
+  </body>
+</html>
